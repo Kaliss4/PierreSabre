@@ -6,9 +6,10 @@ public class Commercant extends Humain {
 		super(nom, boisson, argent);
 	}
 	public int seFaireExtorquer() {
+		int avant = argent ;
 		argent = 0 ;
 		System.out.println(parler()+"J'ai tout perdu ! Le monde est trop injuste...");
-		return argent ;
+		return avant ;
 		// mettre les artribut en protected ou public. Protected est preferable
 	}
 	public void recevoir(int argent) {
